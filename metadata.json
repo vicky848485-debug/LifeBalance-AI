@@ -1,0 +1,8 @@
+{
+  "name": "LifeBalance AI",
+  "description": "An AI-powered wellness companion designed to help users manage stress, work-life balance, and loneliness through personalized insights and empathetic chat.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ]
+}
