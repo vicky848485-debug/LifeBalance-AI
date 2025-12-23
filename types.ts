@@ -1,6 +1,7 @@
 
 export type Screen = 
   | 'SPLASH' 
+  | 'LOGIN'
   | 'CONSENT' 
   | 'ONBOARDING_AGE' 
   | 'ONBOARDING_WORK' 
@@ -24,6 +25,8 @@ export interface UserData {
   baseStress: string;
   baseLoneliness: string;
   hasOnboarded: boolean;
+  isLoggedIn: boolean;
+  loginMethod?: 'google' | 'mobile';
 }
 
 export interface BreakSession {

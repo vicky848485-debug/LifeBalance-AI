@@ -3,7 +3,9 @@ import React from 'react';
 
 export const COLORS = {
   primary: '#4F46E5',
-  secondary: '#22C55E',
+  secondary: '#10B981',
+  violet: '#8B5CF6',
+  blue: '#3B82F6',
   warning: '#F59E0B',
   danger: '#EF4444',
   background: '#F9FAFB',
@@ -12,10 +14,18 @@ export const COLORS = {
 };
 
 export const Icons = {
-  Logo: () => (
-    <div className="bg-indigo-600 p-4 rounded-3xl inline-flex items-center justify-center">
-      <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+  Logo: ({ size = "w-24 h-24" }: { size?: string }) => (
+    <div className={`${size} rounded-[24%] overflow-hidden shadow-2xl relative flex items-center justify-center`}>
+      <div className="absolute inset-0 bg-gradient-to-br from-violet-400 via-blue-400 to-green-400"></div>
+      <svg viewBox="0 0 100 100" className="w-[70%] h-[70%] relative z-10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path 
+          d="M10 52C25 65 40 25 55 45C70 65 85 45 90 45" 
+          stroke="white" 
+          strokeWidth="8" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
+          className="drop-shadow-sm"
+        />
       </svg>
     </div>
   ),
